@@ -29,7 +29,11 @@ class Game {
     update(dt) {
 
         // 物理更新
-        this.physics.update(this.player, dt);
+       this.physics.update(
+    this.player,
+    this.input,
+    dt
+);
 
         // 地面判定
         this.stage.update(this.player);
