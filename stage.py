@@ -6,6 +6,7 @@ class Stage:
         self.ground_y = 500
 
     def check_ground(self, player):
+
         """
         地面との衝突判定
         """
@@ -18,3 +19,6 @@ class Stage:
 
         else:
             player.on_ground = False
+
+    def update(self, player):
+        self.check_ground(player)
